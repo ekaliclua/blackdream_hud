@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 3px 3px 4px #000000;
+
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    top: 0.2vh;
+    right: 0.4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligner les éléments à droite */
+}
+
+.logo {
+    width: 12vw;
+    height: auto;
+    filter: drop-shadow(0px 0px 5px #000000);
+}
+
+.jobText {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: right;
+}
+
+.moneyText {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: right;
+}
+
+.pId {
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: right;
+}
+
+/* Fade transition */
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+#status {
+    display: grid;
+    grid-row-gap: 0.3em;
+
+    position: absolute;
+    bottom: 2vh;
+    left: 16vw;
+
+    min-width: 16vw;
+
+    transition: justify-content 1s;
+}
+
+.status-svg {
+    width: 3vw;
+    height: 4.2vh;
+
+    margin-right: 3px;
+}
+
+.status-circle {
+    stroke-width: 5px;
+
+    transform: rotate(-90deg);
+  	transform-origin: 50% 50%;
+
+    transition: stroke-dashoffset .35s;
+}
+
+.status-health {
+    stroke: #AF7385;
+}
+
+.status-armor {
+    stroke: #90E0FC;
+}
+
+.status-hunger {
+    stroke: #FCDC6B;
+}
+
+.status-thirst {
+    stroke: #4D72CA;
+}
+
+.center-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mic {
+    width: 3vw;
+    height: auto;
+}
